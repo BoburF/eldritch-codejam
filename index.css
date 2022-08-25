@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/home.png);
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ancients{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ancients img{
+    width: 250px;
+    margin-right: 10px;
+}
+
+.ancients img.active_img{
+    border: 5px solid red;
+}
+
+.btn_levels{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn_levels button{
+    margin-bottom: 20px;
+    border: 3px solid purple;
+    color: purple;
+    background: transparent;
+    padding: 10px;
+}
+
+.colods{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.counts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.count2 p,
+.count3 p,
+.count p{
+    color: rgba(255, 0, 0, 0.684);
+}
+
+.count2,
+.count3,
+.count{
+    
+}
