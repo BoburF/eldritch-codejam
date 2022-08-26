@@ -459,23 +459,23 @@ const colods = document.querySelector('.colods');
 
 const start = document.querySelector('.start_btn');
 
+    
+
 document.querySelectorAll('.monster').forEach((item, index) => {
   item.addEventListener('click', (e) => {
-    const mono = ancientsData.find(x => x.name === item.classList.item('azathoth'))
-    btn_levels.style.display = 'flex'
     
+    btn_levels.style.display = 'flex'
+    console.log(ancientsData[index]);
+
     btn_levels.addEventListener('click', (e) => {
-      
-      if(e.target.classList[0] === 'easy'){
-        console.log(mono['easy']);
-      }else if(e.target.classList[0] === 'normal'){
-        console.log(mono['normal']);
-      }else if(e.target.classList[0] === 'hard'){
-        console.log(mono['hard']);
-      }else{
-        return 
+      if (e.target.classList[0] === 'easy') {
+        console.log(ancientsData[ancientsData.findIndex(x => x.name === item.classList[0])]);
+      } else if (e.target.classList[0] === 'normal') {
+        console.log(ancientsData[ancientsData.findIndex(x => x.name === item.classList[0])]);
+      } else if (e.target.classList[0] === 'hard') {
+        console.log(ancientsData[ancientsData.findIndex(x => x.name === item.classList[0])]);
       }
-      
+
     })
 
     document.querySelectorAll('.monster').forEach((item2, index) => {
